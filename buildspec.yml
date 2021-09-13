@@ -6,11 +6,11 @@ phases:
   pre_build:
     commands:
       - echo "Prebuild, installing yarn dependencies"
-      - yarn install
+      - npm install
   build:
     commands:
       - echo "Starting the build step"
-      - yarn run build:qa
+      - npm run build:qa
       - echo "Finished build"
 artifacts:
   name: "BuildOutput"
