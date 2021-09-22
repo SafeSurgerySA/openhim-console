@@ -2,7 +2,7 @@
   "version": "1.14.2",
   "minimumCoreVersion": "5.0.0",
   "protocol": "https",
-  "host": "sssa-qa-elb-1128615438.eu-west-1.elb.amazonaws.com",
+  "host": "qa-openhim-core.safesurgery.co.za",
   "hostPath": "",
   "port": 8080,
   "title": "Admin Console",
