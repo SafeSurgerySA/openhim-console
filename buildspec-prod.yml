@@ -1,0 +1,19 @@
+version: '0.2'
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+  pre_build:
+    commands:
+      - echo "Prebuild, installing yarn dependencies"
+      - npm install
+  build:
+    commands:
+      - echo "Starting the build step"
+      - npm run build:prod
+      - echo "Finished build"
+artifacts:
+  name: "BuildOutput"
+  files:
+    - '**/*'
+  base-directory: 'dist'

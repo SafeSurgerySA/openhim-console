@@ -103,7 +103,7 @@
 		"prepare": "npm run clean && npm run build:prod",
 		"build": "webpack --config webpack.development.js",
 		"build:qa": "NODE_OPTIONS=--max_old_space_size=4096 webpack --config webpack.production.js && cp app/config/qa.json dist/config/default.json",
-		"build:prod": "NODE_OPTIONS=--max_old_space_size=4096 webpack --config webpack.production.js",
+		"build:prod": "NODE_OPTIONS=--max_old_space_size=4096 webpack --config webpack.production.js  && cp app/config/prod.json dist/config/default.json",
 		"version": "node versionManager.js && git add -u",
 		"spec": "speculate"
 	},
